@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Project-wide package",
   "scripts": {
-    "start": "npx npm-run-all --parallel start:frontend start:backend",
+    "start": "npx concurrently \"npm run start:frontend\" \"npm run start:backend\"",
     "start:frontend": "cd hanine-front && npm start",
     "start:backend": "cd hanine-back && npm start"
   },
